@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="imc.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+
+    <meta charset="utf-8">
+    <title>CÁCULO DO IMC</title>
+
+
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+          <img src="./imc.png" alt="IMC" class="img-rounded" width="33%">
+          <h1>Cálculo do IMC</h1>
+    </div>
+
+    <form name="dados">
+
+      <div>
+
+          <label for="nome">Informe seu nome: </label>
+          <input type="text" name="nome" class="form-control" placeholder="aabbccdd"><br>
+          <div class="alert alert-danger" style="display: none" id="alertN1">
+            Informe seu nome corretamente!
+      </div>
+
+      <div>
+
+          <label for="nome">Informe sua idade: </label>
+          <input type="text" name="idade" class="form-control" placeholder="000"><br>
+          <div class="alert alert-danger" style="display: none" id="alertN1">
+            Informe sua idade corretamente!
+      </div>
+
+      <div id="grupoN1" class="form-group">
+
+          <label for="peso">Informe seu peso (em KG): </label>
+          <input type="text" name="n1" class="form-control" placeholder="000"><br>
+          <div class="alert alert-danger" style="display: none" id="alertN1">
+            Informe seu peso corretamente!
+
+      </div>
+
+      <div id="grupoN2" class="form-group">
+
+          <label for="altura">Informe sua altura (em cm): </label>
+          <input type="text" name="n2" class="form-control" placeholder="000"><br>
+          <div class="alert alert-danger" style="display: none" id="alertN2">
+            Informe sua altura corretamente!
+
+      </div>
+
+      <button type="button" name="calculo" class="btn btn-primary">Calcular</button>
+      <button type="reset" class="btn btn-primary">Limpar</button><br><br>
+
+      <div class="form-group">
+
+          <label for="result">IMC: </label>
+          <input type="text" name="resultado" class="form-control" placeholder="20.0" disabled="disabled"><br>
+
+          <label for="result">CLASSIFICAÇÃO: </label>
+          <input type="text" name="classificacao" class="form-control" placeholder="Peso Normal" disabled="disabled"><br>
+
+          <label for="result">FAIXA SAUDÁVEL: </label>
+          <input type="text" name="faixa" class="form-control" placeholder="18.5 - 24.9" disabled="disabled"><br>
+
+      </div>
+
+    </form>
+
+  </body>
+</html>
